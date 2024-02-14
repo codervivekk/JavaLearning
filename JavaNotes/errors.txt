@@ -1,0 +1,89 @@
+Test Cases						O/P
+----------					---------------------
+Remove ;					CE: ; expected
+
+Putting ; between a statement			CE: Not a statement
+
+Remove "					CE: Unclosed String literal
+
+Remove ""					CE: Cannot Find Symbol
+						    Symbol:Variable
+			
+Remove class's }				CE: Reached EOF while parsing }
+			
+			
+Remove class's {}				CE: { Expected
+
+
+class written as Class				CE: class,interface,enum or record expected
+
+
+removing public					RE: main Method not found
+
+
+public written as Public			CE: identifier expected
+
+
+removing static					RE: Main method is not static in class
+
+
+Remove String					CE: illegal start of type
+
+
+String written as string			CE:cannot find symbol
+						symbol:class String
+						
+Remove void 					CE:invalid method declaration,return type required
+
+
+Remove main					CE:identifier expected
+
+
+Replacing main-->anything			RE: main method not found in class
+
+						
+Remove (String []args)				CE:'(' Expected
+
+
+Remove String []args				CE:Main method not found.
+
+
+Remove args					CE: identifier expected
+
+
+Remove System					CE: Cannot find symbol
+						symbol: variable out
+						
+Remove () of println				CE: Not a statement
+
+
+Replace println() with hello()			CE: can't find symbol
+						symbol: method hello()
+						
+Dividing a no by 0				RE:Exception in thread main java.langArithmetic Exception:/ by zero
+
+
+Remove everything & Delete .class file		RE:ClassNotFound Exception		
+						
+
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
