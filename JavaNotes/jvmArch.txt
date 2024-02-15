@@ -1,0 +1,27 @@
+Java Architecture Basics:
+		1.We code and save Java Program with .java extension.
+		2.We compile the source file with the help of javac compiler.
+			->javac Program.java
+				->Program.class files generated.
+			->It generates ByteCode file with .class extension.
+		3.We run the Bytecode file with the help of JVM.
+			->java Program
+				* Process involved while we run this command:
+					->jvm occupies some part of RAM for processing the bytecode file.
+					->classLoader loads the bytecode file into the jvm.
+						->It checks whether the existing .class file exists or not.
+							->Throws exception if file not exists.
+					->Bytecode Verifier verifies whether:
+						->anything is missing in the bytecode,
+						->any malicious code is there in the bytecode
+							->Throws exception if any of the above exists.
+					->Interpreter helps us to execute the entire code line by line.
+						*3 components involved in execution of the byteCode.
+							->Interpreter
+							->JIT Compiler
+							->Security Manager
+					->After Interpretation, JVM converts the bytecode into ML code
+					->JVM gives each line of ML code to the OS.
+					->OS displays it on the o/p screen.
+
+						
